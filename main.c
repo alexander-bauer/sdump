@@ -1,10 +1,8 @@
 #include <stdio.h>
 
-#define USAGE "usage: %s <device>"
-
-void usage(string runpath) {
+void usage(char runpath[]) {
   printf(
-	 "usage: %s <device>",
+	 "usage: %s <device>\n",
 	 runpath
 	 );
 }
