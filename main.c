@@ -7,12 +7,12 @@ void usage(string runpath) {
 	 "usage: %s <device>",
 	 runpath
 	 );
-  return 1;
 }
 
 int main(int argc, char *argv[]) {
   if(argc < 2) {
     usage(argv[0]);
+    return 1;
   }
   char *device = argv[1];
   return 0;
